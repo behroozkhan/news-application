@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apna News</title>
+    <!-- bootsrat cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="conatiner-header">
+            <div class="top-nav">
+                <div class="top-img-h1">
+                    <img src="./images/news-logo.png" alt="news logo">
+                    <h1>Apna News</h1>
+                </div>
+            </div><!-- End Of top-nav container -->
+        </div> <!-- End Of Container header -->
+        
+        <nav>
+            <!-- <div class="nav-toogle menu-icon">
+                <img src="./images/ham-bar.svg" alt="hamburger" width="25"
+                height="25">
+               
+            </div> -->
+            <ul class="navbar ">
+                <div class="li-anchor">
+                    <li><a href="#"  id="live-tv">Live tv</a></li>
+                    <li><a href="#" id="home" onclick="filter('home')">Home</a></li>
+                    <li><a href="#" id="latest" onclick="filter('latest')">Latest</a></li>
+                    <li><a href="#" id="pakistan" onclick="filter('pakistan')">Pakistan</a></li>
+                    <li><a href="#" id="world" onclick="filter('world')">World</a></li>
+                    <li><a href="#" id="sports" onclick="filter('sports')">Sports</a></li>
+                    <li><a href="#" id="showbiz" onclick="filter('showbiz')">Showbiz</a></li>
+                    <li><a href="#" id="fact" onclick="filter('fact')">Fact Check</a></li>
+                    <li><a href="#" id="big" onclick="filter('big')">Big Picture</a></li>
+                    <li><a href="#" id="videos" onclick="filter('videos')">Videos</a></li>
+                </div>
+                <div class="search-button" >
+                    <button class="button-bk"   onclick="newsSearching()">Search</button>
+                    <input type="text" class="search-input" id="search" placeholder="Search...">
+                </div>
+            </ul>
+    </nav>
+    </header>
+    <main>
+        <section>
+            <!-- <div class="home-container d-flex justify-content-between flex-wrap" id="news">
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div> -->
+            <div class="home-card-container" id="news">
+                <!-- <div class="card">
+            <div class="card-image">
+                <img src="" alt="adline">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Your News Headline</h3>
+              <p class="card-description">This is a brief description of the news article. It provides some information about the content of the news.</p>
+            </div>
+          </div> -->
+            </div>
+            <!-- <div class="cards-container container flex" id="cards-container">
+        </div> -->
+        </section>
+    </main>
+    
+    <!-- <div class="spinner-border text-secondary loader" id="loader" role="status">
+        <span class="sr-only"></span>
+    </div> -->
+
+    <!-- js cdn bootstrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"
+        integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/e0836ffa6a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
